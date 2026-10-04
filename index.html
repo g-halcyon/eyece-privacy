@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eyece Privacy Policy</title>
+<meta name="description" content="Privacy policy for Eyece, the camera-verified 20-20-20 eye break app. Your data never leaves your device.">
+<style>
+  :root {
+    --bg: #fff6ee; --card: #ffffff; --text: #3b2a22; --muted: #735a4c;
+    --accent: #b4532a; --line: #e8d5c8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1412; --card: #2a1e1a; --text: #f6e9e1; --muted: #c9b2a6;
+      --accent: #ffa478; --line: #4a3830;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 72px; }
+  h1 { font: 400 2.4rem/1.15 Georgia, "Times New Roman", serif; margin: 0 0 6px; }
+  h2 { font-size: 1.15rem; margin: 2.2em 0 .4em; color: var(--accent); }
+  p, li { color: var(--text); }
+  ul { padding-left: 1.3em; }
+  li { margin: .3em 0; }
+  .meta { color: var(--muted); margin: 0 0 28px; font-size: .95rem; }
+  .summary {
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+    padding: 18px 22px; margin: 0 0 8px;
+  }
+  .summary p { margin: .3em 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 3em; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Eyece Privacy Policy</h1>
+  <p class="meta">Effective 4 October 2026. Eyece is published by kayal, for Windows (Microsoft Store) and Android.</p>
+
+  <div class="summary">
+    <p><strong>Your data never leaves your device.</strong></p>
+    <p>Eyece has no accounts, no servers, no analytics, no crash reporting, no ads and no remote configuration. It makes no network connections at all, and it is built so that it cannot: the Windows package declares no network capability, and the Android app does not request the internet permission.</p>
+  </div>
+
+  <h2>What Eyece does</h2>
+  <p>Eyece reminds you to rest your eyes using the 20-20-20 rule: every 20 minutes of screen time, look at something 20 feet (6 metres) away for 20 seconds. To count only the time you are really at the screen, and to notice when you actually look away, it uses your camera.</p>
+
+  <h2>How the camera is used</h2>
+  <ul>
+    <li>Eyece answers a few yes or no questions a few times per second: is a face in view, is it turned toward the screen, and, only if you turn on blink tracking, are the eyes open and did a blink just happen.</li>
+    <li>Each camera frame is shrunk, analyzed in memory and thrown away immediately. Frames, pictures and video are never saved, never logged and never sent anywhere.</li>
+    <li>The face detection models are part of the app. Nothing is downloaded.</li>
+    <li>The camera is on only while you are using your device. It turns off when you pause Eyece, when the screen turns off, while your PC or phone is locked, and before a PC goes to sleep. If Eyece is closed or crashes, the system releases the camera. If Eyece freezes, the camera turns itself off after 30 seconds.</li>
+    <li>You can see when it is on: Eyece shows a tray icon on Windows and a notification on Android, and your system shows its own camera indicator. Pausing is one tap.</li>
+    <li>You can use Eyece with no camera at all. Turn off <em>Use the camera</em> in Settings and it works as a plain 20 minute timer.</li>
+  </ul>
+
+  <h2>What is stored, and where</h2>
+  <p>Only on your device, in a small database in the app's private storage:</p>
+  <ul>
+    <li>Your settings (intervals, switches, sensitivity).</li>
+    <li>Daily totals: screen time, breaks due, taken and skipped, and your average blink rate if blink tracking is on.</li>
+    <li>Optionally, a short event log of times and event types. It is off by default.</li>
+  </ul>
+  <p>Nothing here identifies you, and none of it is collected by us. In Settings, <em>Export data</em> saves a file only where you choose, and <em>Delete all data</em> erases everything Eyece stored. Uninstalling Eyece also removes its data.</p>
+
+  <h2>Sharing</h2>
+  <p>We do not receive, sell, rent or share any data, because we never have any. Eyece uses no third-party analytics, advertising or tracking services.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Camera</strong>, to detect whether you are facing the screen. On Windows, you can turn this off at any time in Settings, Privacy &amp; security, Camera.</li>
+    <li><strong>Start with your computer</strong> (Windows, optional, off by default), so Eyece can start in the tray when you sign in. You can manage it in Settings, Apps, Startup.</li>
+    <li><strong>Notifications</strong>, to remind you to take a break. They are created on your device; no push service is used.</li>
+    <li><strong>Android only:</strong> a camera-type foreground service, so tracking continues while you use other apps, always with a visible notification and a Pause button; and, optionally, display over other apps, so a break can come up full screen.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Eyece is not directed at children and collects no personal information from anyone, children included.</p>
+
+  <h2>Verify it yourself</h2>
+  <p>You do not have to take our word for it. On Windows you can block Eyece in the firewall and it keeps working normally, and Resource Monitor never shows it making a connection. On Android, <code>android.permission.INTERNET</code> is absent from the app, so the system itself blocks every network connection.</p>
+
+  <h2>Medical note</h2>
+  <p>Eyece gives coarse "looking at the screen or away" detection and is not a medical device. If your eyes hurt or your vision changes, see an eye care professional.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date. Eyece will never start collecting data without changing this page first.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy? Open an issue at <a href="https://github.com/g-halcyon/eyece-privacy/issues">github.com/g-halcyon/eyece-privacy/issues</a>.</p>
+
+  <footer>Eyece, by kayal.</footer>
+</main>
+</body>
+</html>
